@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+            *{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(120deg,#67e215,#fda604);
+}
+.login{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left:calc(50% - 50px);
+
+}
+.login-form{
+    width: 360px;
+    background: #748fb8;
+    height: 580px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.login-form h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.txtb{
+    border-bottom: 2px solid #e97f07;
+    position:relative;
+    margin: 30px 0;
+}
+
+.txtb input{
+    font-size: 15px;
+    color: #333;
+    border:none;
+    width:100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+
+}
+.logbtn{
+    display: block;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg,#09c95f,#df9b08);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: ponter;
+    transition: .5s;
+}
+.logbtn:hover{
+    background-position: right;
+}
+
+        </style>
+   
+    </head>
+    <body>
+        <form action="index.html" class="login-form">
+                
+            <h1>Login</h1>
+
+            <div class="txtb">
+                Username<br>
+                <input type="text" name="usrname">
+                
+            </div>
+            <div class="txtb">
+                password<br>
+                    <input type="password" name="paswd">
+                    
+            </div>
+
+            <input type="submit" class="logbtn" value="Login">
+           
+        </form>
+        
+    </body>
+</html>
